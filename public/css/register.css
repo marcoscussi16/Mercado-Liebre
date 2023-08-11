@@ -1,0 +1,130 @@
+
+/* Estilos para la vista de PC */
+header {
+    background-color: #EAC926; /* Ajusta el color de fondo según tus necesidades */
+}
+
+
+header img {
+    margin-right: 1200px; /* Ajusta el margen según sea necesario */
+}
+
+.form-mensaje{
+    display: flex;
+}
+
+.search-form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.search-form form {
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Centra horizontalmente el formulario */
+}
+
+.search-form input[type="text"] {
+    font-size: 18px; /* Ajusta el tamaño de la letra según tus necesidades */
+    padding: 10px 15px; /* Ajusta el espaciado interno (padding) según tus necesidades */
+    width: 300px; /* Ajusta el ancho del input según tus necesidades */
+}
+
+.search-form button {
+    font-size: 18px; /* Ajusta el tamaño de la letra según tus necesidades */
+    padding: 10px 15px; /* Ajusta el espaciado interno (padding) según tus necesidades */
+    background-color: white;
+    border: 0cm;
+}
+
+.compracuotas {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.enlaces-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.enlace1 {
+    display: flex;
+    gap: 40px;
+    font-size: 15px;
+}
+
+.enlace2 {
+    display: flex;
+    gap: 40px;
+    font-size: 15px;
+}
+
+
+.enlace1 a,
+.enlace2 a {
+    color: #000000; /* Cambia este valor al color deseado */
+    text-decoration: none; /* Elimina la subrayado de los enlaces si lo deseas */
+}
+
+/* Cambiar color al pasar el mouse por encima */
+.enlace1 a:hover,
+.enlace2 a:hover {
+    color: #0906bd; /* Cambia este valor al color deseado al pasar el mouse */
+}
+
+body{
+    background-color: rgb(231, 231, 243)
+}
+
+
+.register-form{
+    text-align: center;
+    
+    margin: 20px auto; /* Ajusta el margen vertical y centrado horizontal del formulario */
+    padding: 20px; /* Ajusta el espaciado interno (padding) del formulario */
+    max-width: 400px; /* Ajusta el ancho máximo del formulario */
+    background-color: #f5f5f5; /* Ajusta el color de fondo del formulario */
+}
+
+/* Agrega esta regla para aplicar la fuente sans-serif a toda la página */
+.sans-serif {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+/* Ajusta el tamaño y espaciado de los inputs en el formulario de registro */
+.register-form input[type="text"],
+.register-form input[type="date"],
+.register-form select,
+.register-form input[type="password"],
+.register-form input[type="file"] {
+    font-size: 16px;
+    padding: 12px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ajusta el tamaño de la fuente del formulario de registro */
+.register-form label,
+.register-form button {
+    font-size: 18px;
+}
+
+/* Aumenta el espacio entre los elementos del formulario */
+.register-form label,
+.register-form input,
+.register-form select,
+.register-form button {
+    margin-bottom: 15px;
+}
+
+/* Agrega un poco de espacio en la parte superior del formulario */
+.register-form {
+    margin-top: 30px;
+}

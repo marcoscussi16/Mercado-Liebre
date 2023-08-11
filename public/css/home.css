@@ -1,0 +1,233 @@
+header {
+    background-color: #EAC926;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#Basado {
+    font-size: 24px;
+}
+
+#Ofertas {
+    font-size: 24px;
+}
+
+main section li {
+    font-size: 18px;
+}
+
+
+footer section p {
+    font-size: 16px;
+}
+
+header input[type="text"] {
+    margin-left: 10px;
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+header .fa-search {
+    font-size: 16px;
+    margin: center;
+    cursor: pointer;
+}
+
+.burger-menu {
+    font-size: 26px;
+    margin: auto;
+    width: 40px;
+    text-align: center; /* Centra horizontalmente */
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color:  #23509f;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+
+footer{
+    text-align: center;
+}
+
+footer h1{
+    font-weight: bold;
+}
+
+.compracuotas{
+    text-align: center;
+    width: auto;
+}
+
+main{
+    text-align: center;
+    width: 90%;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-item {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    width: calc(50% - 10px); /* Ajusta el ancho de cada producto con margen */
+}
+
+.product-details {
+    margin-top: 15px;
+    border-top: 1px solid #ebebeb;
+    padding-top: 15px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.product-discount {
+    font-size: 16px;
+    color: #e66a6a;
+    display: block;
+}
+
+.product-details h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* Estilos para tablets (ancho mínimo 361 px) */
+@media (min-width: 361px) {
+    main {
+        width: 80%;
+    }
+    
+    .product-item {
+        width: calc(33.33% - 10px);
+    }
+    
+    .product-details {
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para desktop (ancho mínimo 769 px) */
+@media (min-width: 769px) {
+    main {
+        width: 70%;
+    }
+    
+    .product-item {
+        width: calc(25% - 10px);
+    }
+    
+    .product-details {
+        margin-top: 10px;
+    }
+    
+    /*Box-shadow */
+    .product-item {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+}
+
+/* Estilos para versiones mobile */
+@media (max-width: 360px) {
+    header .site-nav,
+    header .login-nav {
+        display: none;
+    }
+    
+    header .burger-menu {
+        display: block;
+    }
+}
+
+/* Estilos para versiones tablet (ancho mínimo 361 px) y desktop (ancho mínimo 769 px) */
+@media (min-width: 361px) {
+    header .burger-menu {
+        display: none;
+    }
+    
+    header .site-nav,
+    header .login-nav {
+        display: flex;
+    }
+}
+
+/* Estilos para autoajustar imágenes en desktop */
+@media (min-width: 769px) {
+    .responsive-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* CSS para los efectos en los artículos (styles.css): */
+.product-item {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-item:hover {
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.3);
+    transform: translateY(-5px);
+}
+
+.product-details {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.product-item:hover .product-details {
+    display: block;
+}
+
+.product-item:hover .shipping-icon {
+    transform: rotate(-90deg);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px 0;
+}
+
+footer section {
+    display: flex;
+    align-items: center;
+}
+
+footer section i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #666; /* Color de íconos por defecto */
+    transition: color 0.3s ease; /* Agregamos una transición suave al cambio de color */
+}
+
+footer section i:hover {
+    color: #23509f; /* Cambiamos el color de íconos al pasar el mouse */
+}
