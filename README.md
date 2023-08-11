@@ -1,1 +1,3 @@
-# Mercado-Liebre
+# Proyecto Mercado-Liebre
+
+By Marcos Cussi
